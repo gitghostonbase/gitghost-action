@@ -7,14 +7,6 @@
 For maintainers running rings: drop this action into `.github/workflows/`
 and every PR gets a verifiable proof panel without leaving GitHub.
 
-## Live demo
-
-See it running on a real PR:
-[gitghostonbase/public-ring-test#1](https://github.com/gitghostonbase/public-ring-test/pull/1).
-
-The sticky comment, the workflow run logs, and the on-chain anchor link
-are all public and reproducible — no fake data, no curated screenshots.
-
 This repo's commits are themselves signed with `gitghost` — eat your own
 dogfood. Run `gitghost verify <sha>` on any commit here to see the LSAG
 math hold.
