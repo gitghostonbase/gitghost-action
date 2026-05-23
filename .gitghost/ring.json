@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "name": "gitghost-action",
+  "context": "f7ac4050b0ea0e915529a8ced41fbc0517ec69a0b4691b4143c1f00d83be87ab",
+  "members": [
+    {
+      "github": "self",
+      "publicKey": "03d75e9c736f1a0474e89cb090b2007c5331236510852c8ed5cc44141f87de2aa3",
+      "source": "local",
+      "fetchedAt": 1779522642628
+    },
+    {
+      "github": "torvalds",
+      "publicKey": "026a938ec3615632b5fa04cab66fd3ac044a4f1095244e24c22900c2394247c469",
+      "source": "github",
+      "fetchedAt": 1779522649789
+    },
+    {
+      "github": "gregkh",
+      "publicKey": "0305c471b3cfe1dae9134dcb8c68034a62605f2a58a52f0ae74a4f4309c1fd7cf1",
+      "source": "github",
+      "fetchedAt": 1779522661553
+    }
+  ],
+  "createdAt": 1779522631465
+}

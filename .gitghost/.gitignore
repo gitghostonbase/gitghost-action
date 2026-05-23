@@ -1,0 +1,6 @@
+# created by `gitghost init` - do NOT remove these lines.
+# identity.json contains your secret key. Committing it would deanonymize
+# you and let anyone else sign as you. ring.json + anchors.json ARE meant
+# to be committed.
+identity.json
+*.identity.json

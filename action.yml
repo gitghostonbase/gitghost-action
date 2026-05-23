@@ -1,0 +1,38 @@
+name: 'gitghost verify'
+description: 'Verify ghost commits (LSAG ring signatures) on a pull request and post a sticky verification comment.'
+author: 'gitghost'
+
+branding:
+  icon: 'shield'
+  color: 'gray-dark'
+
+inputs:
+  api-url:
+    description: 'Override the gitghost verify API endpoint. Defaults to https://gitghost.org/api/verify.'
+    required: false
+    default: 'https://gitghost.org/api/verify'
+  github-token:
+    description: 'Token used to read PR commits and post the sticky comment. Pass github.token from the workflow.'
+    required: false
+  fail-on-invalid:
+    description: 'Fail the action when at least one ghost commit fails verification. Default: true.'
+    required: false
+    default: 'true'
+  comment:
+    description: 'Whether to post a sticky verification comment on the PR. Default: true.'
+    required: false
+    default: 'true'
+
+outputs:
+  total:
+    description: 'Total commits inspected.'
+  ghost:
+    description: 'Number of ghost commits found.'
+  verified:
+    description: 'Number of ghost commits whose LSAG signature verified.'
+  invalid:
+    description: 'Number of ghost commits whose verification failed.'
+
+runs:
+  using: 'node20'
+  main: 'dist/index.js'

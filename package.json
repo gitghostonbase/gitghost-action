@@ -1,0 +1,30 @@
+{
+  "name": "@gitghost/action",
+  "version": "0.1.0",
+  "private": true,
+  "description": "GitHub Action that verifies ghost commits on pull requests and posts a sticky verification comment.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "ncc build src/main.ts -o dist --minify --source-map --license LICENSES.txt",
+    "typecheck": "tsc --noEmit",
+    "package": "npm run typecheck && npm run build"
+  },
+  "keywords": [
+    "github-action",
+    "gitghost",
+    "lsag",
+    "ring-signature",
+    "anonymous-commits"
+  ],
+  "author": "gitghost",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.11.1",
+    "@actions/github": "^6.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "@vercel/ncc": "^0.38.1",
+    "typescript": "^5.5.3"
+  }
+}
